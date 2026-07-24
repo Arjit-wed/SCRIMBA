@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+}
+.card{
+ background-color: #1F2937;
+width: 1050px;
+height: 550px;
+rotate: 0 deg;
+opacity: 1;
+margin-top: 0px;
+margin-left: 62px;
+}
+
+input{
+    width: 140px;
+     size:auto;
+}
+ .head{
+font-family: Karla;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 40px;
+/* line-height: 40px; */
+letter-spacing: -2.5%;
+color: white;
+width: 354;
+height: 80;
+rotate: 0 deg;
+opacity: 1;
+margin-top: 115px;
+margin-left: 52px;
+}
+
+.head span{
+    color:   #10B981;
+}
+
+.para{
+ 
+rotate: 0 deg;
+opacity: 1;
+/* margin-top: 20px; */
+ 
+
+font-family: Inter;
+font-weight: 400;
+font-size: 20px;
+/* leading-trim: NONE; */
+/* line-height: 28px; */
+letter-spacing: 0%;
+
+}
+button{
+    background: #10B981;
+    border: none;
+    width: 191;
+height: 42;
+rotate: 0 deg;
+opacity: 1;
+margin-top: 0px;
+margin-left: 52px;
+border-radius: 6px;
+padding: 9px;
+ 
+/* gap: 12px; */
+
+}
+.btn{
+   color: #FFFFFF;
+ 
+ 
+/* angle: 0 deg; */
+opacity: 1;
+margin:9px 17px;
+    font-family: Inter;
+font-weight: 500;
+font-size: 30px;
+/* leading-trim: NONE; */
+line-height: 24px;
+letter-spacing: 0%;
+
+}
+.out{
+    background: #10B981;
+    border: none;
+    width: 180px;
+height: 42;
+rotate: 0 deg;
+opacity: 1;
+margin-top: 30px;
+margin-left: 52px;
+border-radius: 6px;
+padding: 9px;
+ 
+
+}
+.out1{
+     background: #10B981;
+    border: none;
+    width: 180px;
+height: 42;
+rotate: 0 deg;
+opacity: 1;
+margin-top: 30px;
+margin-left: 52px;
+border-radius: 6px;
+padding: 9px;
+ 
+
+
+}
