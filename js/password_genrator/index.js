@@ -9,26 +9,32 @@ const characters = ["A", "B", "C", "D", "E", "F", "G",
     "=", "{", "[", "}", "]", ",", "|", ":", ";", "<",
     ">", ".", "?", "/"];
 
-const btn=document.getElementsByTagName("button")
-const pas=document.getElementById("password")
-const pas1=document.getElementById("password1")
-const size=document.getElementById("lname");
-function getrandom(){
-    let randomnum=characters[Math.floor(Math.random()*characters.length)]
-    for(let i=1;i<size.value;i++){
-        randomnum=characters[Math.floor(Math.random()*characters.length)]+randomnum
-    }
-    return randomnum
+const pas = document.getElementById("password");
+const pas1 = document.getElementById("password1");
+const size = document.getElementById("lname");
+const generateBtn = document.getElementById("generateBtn");
 
+function getrandom() {
+    const n = Math.max(1, Math.min(99, parseInt(size?.value, 10) || 8));
+    let result = "";
+    for (let i = 0; i < n; i++) {
+        result += characters[Math.floor(Math.random() * characters.length)];
+    }
+    return result;
 }
-function Getpassword(){
-  
-    pas.textContent=getrandom()
-    pas1.textContent=getrandom()
+
+function Getpassword() {
+    if (pas) pas.textContent = getrandom();
+    if (pas1) pas1.textContent = getrandom();
+}
+
+if (generateBtn) {
+    generateBtn.addEventListener("click", Getpassword);
 }
 
 async function copyPassword(elementId) {
-    const passwordText = document.getElementById(elementId).textContent.trim();
+    const el = document.getElementById(elementId);
+    const passwordText = el ? el.textContent.trim() : "";
 
     try {
         if (navigator.clipboard && window.isSecureContext) {

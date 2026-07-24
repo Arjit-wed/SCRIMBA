@@ -2,111 +2,149 @@ body {
     margin: 0;
     background-color: #1C1C1C;
 }
-.card{
- background-color: #1F2937;
-width: 1050px;
-height: 550px;
-rotate: 0 deg;
-opacity: 1;
-margin-top: 0px;
-margin-left: 62px;
+
+.card {
+    background-color: #1F2937;
+    width: 1050px;
+    height: 550px;
+    transform: rotate(0deg);
+    opacity: 1;
+    margin-top: 0px;
+    margin-left: 62px;
 }
 
-input{
+input {
     width: 140px;
-     size:auto;
-}
- .head{
-font-family: Karla;
-font-weight: 800;
-font-style: ExtraBold;
-font-size: 40px;
-/* line-height: 40px; */
-letter-spacing: -2.5%;
-color: white;
-width: 354;
-height: 80;
-rotate: 0 deg;
-opacity: 1;
-margin-top: 115px;
-margin-left: 52px;
+    padding: 6px 8px;
+    box-sizing: border-box;
 }
 
-.head span{
-    color:   #10B981;
+.head {
+    font-family: "Karla", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: -2.5%;
+    color: white;
+    opacity: 1;
+    margin-left: 52px;
 }
 
-.para{
- 
-rotate: 0 deg;
-opacity: 1;
-/* margin-top: 20px; */
- 
+.head span {
+    color: #10B981;
+}
 
-font-family: Inter;
-font-weight: 400;
-font-size: 20px;
-/* leading-trim: NONE; */
-/* line-height: 28px; */
-letter-spacing: 0%;
+.para {
+    transform: rotate(0deg);
+    opacity: 1;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;  
+    letter-spacing: 0%;
 
 }
-button{
+
+button {
     background: #10B981;
     border: none;
-    width: 191;
-height: 42;
-rotate: 0 deg;
-opacity: 1;
-margin-top: 0px;
-margin-left: 52px;
-border-radius: 6px;
-padding: 9px;
- 
-/* gap: 12px; */
+    display: block;
+    opacity: 1;
+    margin-top: 9px;
+    margin-left: 52px;
+    border-radius: 6px;
+    padding: 9px;
+
+
 
 }
-.btn{
-   color: #FFFFFF;
- 
- 
-/* angle: 0 deg; */
-opacity: 1;
-margin:9px 17px;
+
+.btn1 {
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 9px 17px;
     font-family: Inter;
-font-weight: 500;
-font-size: 30px;
-/* leading-trim: NONE; */
-line-height: 24px;
-letter-spacing: 0%;
+    font-weight: 500;
+    font-size: 30px;
+    /* leading-trim: NONE; */
+    line-height: 24px;
+    letter-spacing: 0%;
 
 }
-.out{
+
+.btn {
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 15px 0px;
+ 
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0%;
+    height: 42px;
+    padding: 0 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: #10B981;
+    
+    margin-left: 52px;
+}
+
+.out {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 52px;
+}
+
+ 
+
+.password-text {
+    background: grey;
+    color: #ffffff;
+    width: 320px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 6px;
+}
+
+.password-text h3 {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.password-row { /* ensure button aligns with text */
+    display: flex;
+    align-items: center;
+     
+}
+
+.btn1 {
+    color: #FFFFFF;
     background: #10B981;
     border: none;
-    width: 180px;
-height: 42;
-rotate: 0 deg;
-opacity: 1;
-margin-top: 30px;
-margin-left: 52px;
-border-radius: 6px;
-padding: 9px;
- 
-
+    height: 60px;
+    padding: 0 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 6px;
+    
 }
-.out1{
-     background: #10B981;
-    border: none;
-    width: 180px;
-height: 42;
-rotate: 0 deg;
-opacity: 1;
-margin-top: 30px;
-margin-left: 52px;
-border-radius: 6px;
-padding: 9px;
- 
+.btn:active {
+  background-color:#10b981d6;
+  transform: translateY(4px);
+}
 
-
+.btn1:active {
+  background-color:#10b981d6;
+  transform: translateY(4px);
 }

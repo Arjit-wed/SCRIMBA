@@ -12,24 +12,26 @@
             <h1>Generate a <span>
                     random password
                 </span> </h1>
-            <div class="para">
+                <div class="para">
                 <p>Never use an insecure password again.</p>
             </div>
             <div> Passwordlength:<input type="number" min="1" max="99" id="lname" placeholder="password_length"></div>
         </div>
-        <button onclick="Getpassword()">
-            <div class="btn">
-                Generate passwords
-            </div>
+        <button id="generateBtn" class="btn" type="button">
+            Generate passwords
         </button>
-        <div class="out" id="password">
-    hfksh
-        </div> <button onclick="copyPassword('password')">Copy</button>
+        <div class="out">
+            <div class="password-row">
+                <div class="password-text" id="password"><h3>hfksh</h3></div>
+                <button class="btn1" type="button" onclick="copyPassword('password')">Copy</button>
+            </div>
 
-         <div class="out1" id="password1">
-hfksh
-        </div> <button onclick="copyPassword('password1')">Copy</button>
-    </div>
+            <div class="password-row">
+                <div class="password-text" id="password1"><h3>hfksh</h3></div>
+                <button class="btn1" type="button" onclick="copyPassword('password1')">Copy</button>
+            </div>
+        </div>
+        </div>
     <script src="index.js"></script>
 </body>
 
