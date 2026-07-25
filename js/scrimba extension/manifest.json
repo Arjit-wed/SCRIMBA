@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Leads Tracker",
+  "version": "1.0.0",
+  "description": "Save useful links and open them from a Chrome extension popup.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.svg"
+  },
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  },
+  "permissions":["tabs", "activeTab"]
+}
