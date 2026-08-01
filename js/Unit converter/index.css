@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #1f2937;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 550px;
+    height: 529px;
+    background: #1f2937;
+}
+
+.background {
+    position: relative;
+    width: 550px;
+    height: 285px;
+    background: #6943ff;
+    padding-top: 33px;
+}
+
+.heading {
+    margin: 0 auto;
+    width: 448px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.number-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    pointer-events: none;
+}
+
+input[type='number'] {
+    position: absolute;
+    left: 50%;
+    top: 101px;
+    transform: translateX(-50%);
+    width: 117px;
+    height: 83px;
+    border: 2px solid #b295ff;
+    border-radius: 5px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 83px;
+    text-align: center;
+    outline: none;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    appearance: textfield;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    top: 209px;
+    transform: translateX(-50%);
+    width: 117px;
+    height: 42px;
+    border: 0;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #3d3d3d;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.group1 {
+    width: 500px;
+    margin: 18px auto 0;
+}
+
+.gridlist {
+    width: 100%;
+    min-height: 108px;
+    padding: 31px 25px 29px;
+    background: #273549;
+    text-align: center;
+}
+
+.gridlist h2 {
+    margin: 0 0 9px;
+    color: #ccc1ff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.gridlist p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
