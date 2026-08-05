@@ -1,0 +1,101 @@
+
+:root{
+  --bg: #23252C;
+  --card: #1F2226; /* card overall */
+  --panel: #26282b; /* middle panel */
+  --footer: #151618; /* footer bar */
+  --accent: #F3BF99;
+  --text: #FFFFFF;
+  --muted: #BFC3C7;
+  --btn-bg: #FFFFFF;
+  --btn-text: #111827;
+  --radius: 12px;
+  --gap: 1rem;
+}
+
+*,*::before,*::after{ box-sizing: border-box; }
+
+html,body{ height:100%; margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+body{ background: var(--bg); display:flex; align-items:center; justify-content:center; padding:2rem; color:var(--text); }
+
+/* Card wrapper */
+.main{
+  width: 320px;
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  margin-top: 112px;
+}
+
+/* Top image */
+.img img{
+  width: 100%;
+  height: 300px;
+  /* object-fit: cover; */
+  display: block;
+}
+
+/* Profile header band */
+.info{
+  background: var(--panel);
+  padding: 20px 22px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.info h2{ margin: 0 0 6px 0; font-size: 20px; font-weight:700; color:var(--text); }
+.info .title{ margin: 0; color: var(--accent); font-size: 13px; font-weight:600; }
+.info .website{ margin-top:8px; color: var(--muted); font-size:12px; text-decoration: none; }
+
+/* CTA button */
+.btn{
+  margin-top: 14px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  width: 86%;
+  max-width: 260px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+.btn .icon{ margin-right:6px; }
+
+/* Content sections */
+.content{
+  padding: 18px 22px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.03), transparent);
+}
+.content h3{ margin: 0 0 8px 0; color: var(--text); font-size: 15px; }
+.content p{ margin: 0 0 14px 0; color: var(--muted); font-size: 13px; line-height:1.5; }
+
+/* Bottom footer with social icons */
+.footer{
+  background: var(--footer);
+  padding: 12px 18px;
+  display:flex;
+  gap: 10px;
+  justify-content:center;
+  align-items:center;
+}
+.footer .social-icon{
+  width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center; background: #2b2e31; color: var(--muted); border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* small screens */
+@media (max-width: 420px){
+  .main{ width: 94%; }
+  .img img{ height: 260px; }
+}
+
+
